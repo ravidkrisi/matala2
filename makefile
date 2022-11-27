@@ -8,7 +8,7 @@ libclassmat.a: my_mat.o my_mat.h
 	ar rcs libclassmat.a my_mat.o
 
 libclassmat.so: my_mat.o my_mat.h
-	gcc -shared libclassmat.o
+	gcc -shared my_mat.o -o libclassmat.so
 
 mains: main.o libclassmat.a
 	gcc main.o libclassmat.a -lm -o mains

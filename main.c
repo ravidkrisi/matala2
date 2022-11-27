@@ -16,7 +16,7 @@ int main()
         if(userInput=='A')
         {
             //create the matrix
-           creatMat(mat);
+           createMat(mat);
         }
         else if(userInput=='B')
         {

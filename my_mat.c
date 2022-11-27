@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "my_mat.h"
 
-copyMatrix(int mat[10][10], int copyMat[10][10])
+int copyMatrix(int mat[10][10], int copyMat[10][10])
     {
         //copy matrix for the shortestPath func and fill the zeros with INF
         int i,j;
@@ -23,9 +23,10 @@ copyMatrix(int mat[10][10], int copyMat[10][10])
         for(i=0;i<10;i++){
             copyMat[i][i]=0;
         }
+        return 0;
     }
     
-    createMat(int mat[10][10])
+    int createMat(int mat[10][10])
     {
         //create matrix 10*10 
     int i,j,x;
@@ -40,6 +41,7 @@ copyMatrix(int mat[10][10], int copyMat[10][10])
             mat[j][i]=x;
         }
     }
+    return 0;
     }
       
     int shortestPath(int x, int y, int mat[10][10])
