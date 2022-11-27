@@ -7,11 +7,11 @@ int main()
     char userInput='z';
     int mat[10][10];
     int i,j;
-    
+
     while(userInput!='D')
     {
-        printf("enter the action you want to do\n");
-        scanf("%c", &userInput);
+        // printf("enter the action you want to do\n");
+        scanf(" %c", &userInput);
         
         if(userInput=='A')
         {
@@ -21,7 +21,7 @@ int main()
         else if(userInput=='B')
         {
             //ask the user for i,j input and check wheather there is a path between them
-           printf("enter the i and j you want to check if there is Path Exist\n");
+        //    printf("enter the i and j you want to check if there is Path Exist\n");
            scanf("%d%d",&i,&j);
            int isExist=shortestPath(i,j,mat);
            if(isExist!=INF&&isExist!=0)
@@ -36,7 +36,7 @@ int main()
         else if(userInput=='C')
         {
             //ask the user for i,j input and return the shortest path between then else return -1
-            printf("enter the i and j you want to check the shortest path between them\n");
+            // printf("enter the i and j you want to check the shortest path between them\n");
             scanf("%d%d",&i,&j);
             int isExist=shortestPath(i,j,mat);
             if(isExist!=INF&&isExist!=0)

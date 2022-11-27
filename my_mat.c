@@ -51,6 +51,8 @@ int copyMatrix(int mat[10][10], int copyMat[10][10])
         int copyMat[10][10];
         copyMatrix(mat,copyMat);
         int i,j,k;
+        // printf("%d\n",mat[x][y]);
+        // printf("%d\n",copyMat[x][y]);
         
             for(k=0;k<10;k++){
             for(i=0;i<10;i++){
