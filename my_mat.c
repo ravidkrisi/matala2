@@ -35,7 +35,7 @@ int copyMatrix(int mat[10][10], int copyMat[10][10])
     {
         for(j=i;j<10;j++)
         {
-            printf("enter the weight of string[%d,%d]",i,j);
+            printf("enter the weight of string[%d,%d]\n",i,j);
             scanf("%d",&x);
             mat[i][j]=x;
             mat[j][i]=x;
